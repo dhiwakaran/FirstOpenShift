@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="SampleMaven">
+    <output-path>$PROJECT_DIR$/target/SampleMaven</output-path>
+    <root id="archive" name="SampleMaven.ear">
+      <element id="javaee-facet-resources" facet="SampleMaven/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SampleMaven" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:4.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

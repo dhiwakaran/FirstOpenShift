@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="SampleMaven:war exploded">
+    <output-path>$PROJECT_DIR$/target/SampleMaven.war</output-path>
+    <root id="root">
+      <element id="artifact" artifact-name="SampleMaven:war exploded" />
+    </root>
+  </artifact>
+</component>
