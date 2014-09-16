@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="workshop">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="PrimeTab-1.0.war">
+      <element id="artifact" artifact-name="Workshop" />
+    </root>
+  </artifact>
+</component>
