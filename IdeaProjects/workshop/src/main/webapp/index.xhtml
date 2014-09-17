@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+
+    <h:form>
+        <p:tabView>
+            <p:tab title="Setup">
+                <h:panelGrid columns="2" cellpadding="10">
+
+                    <h:outputText
+                            value="Setup..." />
+
+                    <p:growl id="growl" showDetail="true" sticky="true" />
+
+                    <p:panel header="Growl">
+                        <h:panelGrid columns="2" cellpadding="5">
+                            <p:outputLabel for="msg" value="Message:" />
+                            <p:inputText id="msg" value="#{growlView.message}" required="true" />
+                        </h:panelGrid>
+
+                        <p:commandButton value="Save" actionListener="#{growlView.saveMessage}" update="growl" />
+                    </p:panel>
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Processing">
+                <h:panelGrid columns="2" cellpadding="10">
+
+                    <h:outputText value="Processing .." />
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Decision Making">
+                <h:panelGrid columns="2" cellpadding="10">
+
+                    <h:outputText value="Decision Making..." />
+                </h:panelGrid>
+            </p:tab>
+
+            <p:tab title="Change">
+                <h:panelGrid columns="2" cellpadding="10">
+
+                    <h:outputText value="Change..." />
+                </h:panelGrid>
+            </p:tab>
+        </p:tabView>
+
+
+    </h:form>
+
+</h:body>
+</html>
