@@ -1,9 +1,10 @@
 package com.canviara;
 
-import javax.annotation.PostConstruct;
-import java.io.Serializable;
-import javax.faces.bean.ManagedBean;
 import org.primefaces.model.chart.PieChartModel;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import java.io.Serializable;
 
 @ManagedBean
 public class chartView implements Serializable {
